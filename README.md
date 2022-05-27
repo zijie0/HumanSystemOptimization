@@ -321,7 +321,14 @@ Sinclair 也对比了一些上个世纪失败的研究，比如通过抗氧化�
 
 睡眠方面暂时没有什么特别的措施，现在带娃基本上晚上睡眠质量也比较一般。只是会稍稍注意一下晚上 11 点后尽量不接触手机光源。早起接收光照这点，基本上就是早上遛狗或者开车通勤时间来接触，基本压力不大。如果比较讲究的同学，还可以下一个 [My Circadian Clock App](https://mycircadianclock.org/) 来追踪一下生物钟，也是 Satchin Panda 等大佬参与开发的项目，值得信赖。
 
-饮食方面，开始尝试 8 小时进食窗口的 fasting，目前感觉良好。中饭一般吃蔬菜为主的轻食，晚上就比较放飞自我，想吃啥吃啥。早上会看情况喝点盐水，茶或者 AG1 的补充剂。膳食补充剂目前基本只有复合维生素和 EPA 鱼油在使用，后面可以参考下 Huberman 的“配方”增加一些。Huberman 自己也在节目中表示**对白藜芦醇和 NMN 还在观望状态**，我查了些资料发现有争议的地方还不少，所以我个人建议先采纳广受认可和使用的一些补充剂，如 EPA 鱼油，二甲双胍等。
+饮食方面，开始尝试 8 小时进食窗口的 fasting，目前感觉良好。中饭一般吃蔬菜为主的轻食，晚上就比较放飞自我，想吃啥吃啥。早上会看情况喝点盐水，茶或者 AG1 的补充剂。膳食补充剂目前基本只有复合维生素和 EPA 鱼油在使用，后面可以参考下 [Huberman 的“配方”](https://fastlifehacks.com/andrew-huberman-supplements-list/) 增加一些。Huberman 自己也在节目中表示**对白藜芦醇和 NMN 还在观望状态**，我查了些资料发现有争议的地方还不少，所以我个人建议先采纳广受认可和使用的一些补充剂，如 EPA 鱼油，二甲双胍等。个人目前考虑的补充剂列表：
+
+- [基础维生素](https://www.thorne.com/products/dp/basic-nutrients-2-day)，常规补充剂。
+- [Omega-3 EPA](https://www.thorne.com/products/dp/super-epa-sp608nc)。
+- [Betaine HCL & Pepsin](https://www.thorne.com/products/dp/betaine-hcl-pepsin-225-s)，保护肠胃。
+- [L-Tyrosine](https://www.thorne.com/products/dp/l-tyrosine)，提升多巴胺，可能会买个尝尝鲜。
+- [二甲双胍](https://zh.m.wikipedia.org/zh/%E4%BA%8C%E7%94%B2%E5%8F%8C%E8%83%8D)，抗衰老“神药”。
+- [ResveraCel](https://www.thorne.com/products/dp/resveracel)，白藜芦醇，NR 等抗衰老组合。
 
 很多人都关心 fasting 可能引发胆结石，这里提供一些补充信息：
 
