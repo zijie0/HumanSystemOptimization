@@ -327,13 +327,13 @@ Sinclair 也对比了一些上个世纪失败的研究，比如通过抗氧化�
 
 饮食方面，开始尝试 8 小时进食窗口的 fasting，目前感觉良好。中饭一般吃蔬菜为主的轻食，晚上就比较放飞自我，想吃啥吃啥。早上会看情况喝点盐水，茶或者 AG1 的补充剂。膳食补充剂目前基本只有复合维生素和 EPA 鱼油在使用，后面可以参考下 [Huberman 的“配方”](https://fastlifehacks.com/andrew-huberman-supplements-list/) 增加一些。Huberman 自己也在节目中表示**对白藜芦醇和 NMN 还在观望状态**，我查了些资料发现有争议的地方还不少，所以我个人建议先采纳广受认可和使用的一些补充剂，如 EPA 鱼油，二甲双胍等。个人目前考虑的补充剂列表：
 
-- [基础维生素](https://www.thorne.com/products/dp/basic-nutrients-2-day)，常规补充剂。
-- [Omega-3 EPA](https://www.thorne.com/products/dp/super-epa-sp608nc)。
-- [AG1](https://athleticgreens.com/en)，超火的小绿粉，各种植物提取物 + 各种维生素矿物会，Fridman，Huberman 等大佬的节目里都有提到，就是贵了点。
-- [Betaine HCL & Pepsin](https://www.thorne.com/products/dp/betaine-hcl-pepsin-225-s)，保护肠胃。
+- [基础维生素](https://www.thorne.com/products/dp/basic-nutrients-2-day)，常规补充剂，也可以根据自己的饮食结构，生活习惯选择特定的营养物质补充。
+- [Omega-3 EPA](https://www.thorne.com/products/dp/super-epa-sp608nc)，常年销量靠前的补充剂，好处前面已经说了很多了。
+- [AG1](https://athleticgreens.com/en)，超火的小绿粉，各种植物提取物 + 各种维生素矿物会，Fridman 等大佬的节目里都有提到。个人买了一次，不过看一些其它评测貌似并不是很划得来。
+- [Betaine HCL & Pepsin](https://www.thorne.com/products/dp/betaine-hcl-pepsin-225-s)，保护肠胃，促进吸收。
 - [L-Tyrosine](https://www.thorne.com/products/dp/l-tyrosine)，提升多巴胺，可能会买个尝尝鲜。
-- [二甲双胍](https://zh.m.wikipedia.org/zh/%E4%BA%8C%E7%94%B2%E5%8F%8C%E8%83%8D)，抗衰老“神药”。
-- [ResveraCel](https://www.thorne.com/products/dp/resveracel)，白藜芦醇，NR 等抗衰老组合。
+- [二甲双胍](https://zh.m.wikipedia.org/zh/%E4%BA%8C%E7%94%B2%E5%8F%8C%E8%83%8D)，抗衰老“神药”，不过这个药的有效性和安全性还有争议，建议谨慎。
+- [ResveraCel](https://www.thorne.com/products/dp/resveracel)，白藜芦醇，NR 等抗衰老组合。效果同样有争议，尤其 NMN 这块更是各种产品鱼龙混杂无法分辨，谨慎购入。
 
 很多人都关心 fasting 可能引发胆结石，这里提供一些补充信息：
 
