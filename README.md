@@ -280,6 +280,8 @@ Huberman 认为，大脑的主要功能链路是感知，认知，情感，思�
 
 最后我们来看下如何延年益寿，这是 Huberman 跟这个领域的专家，来自哈佛的 David Sinclair 的一集访谈节目。
 
+⚠️ 更新：2025-06-17 目前关于 David Sinclair 教授及其倡导的白藜芦醇、NMN 等抗衰老产品的科学证据仍存在较大争议，相关内容请谨慎参考和采纳。
+
 ## 衰老的本质
 
 Sinclair 认为，衰老是一种疾病，它本身导致了非常多通常意义上的疾病的出现，比如阿尔兹海默症，癌症等。我们可以通过科学的手段来“治疗”衰老，甚至逆转它。
@@ -376,7 +378,7 @@ Sinclair 也对比了一些上个世纪失败的研究，比如通过抗氧化�
 - [Betaine HCL & Pepsin](https://www.thorne.com/products/dp/betaine-hcl-pepsin-225-s)，保护肠胃，促进吸收。
 - [L-Tyrosine](https://www.thorne.com/products/dp/l-tyrosine)，提升多巴胺，可能会买个尝尝鲜。
 - [二甲双胍](https://zh.m.wikipedia.org/zh/%E4%BA%8C%E7%94%B2%E5%8F%8C%E8%83%8D)，抗衰老“神药”，不过这个药的有效性和安全性还有争议，建议谨慎。
-- [ResveraCel](https://www.thorne.com/products/dp/resveracel)，白藜芦醇，NR 等抗衰老组合。效果同样有争议，尤其 NMN 这块更是各种产品鱼龙混杂无法分辨，谨慎购入。
+- [ResveraCel](https://www.thorne.com/products/dp/resveracel)，⚠️白藜芦醇，NR 等抗衰老组合。效果同样有争议，尤其 NMN 这块更是各种产品鱼龙混杂无法分辨，谨慎购入。
 
 很多人都关心 fasting 可能引发胆结石，这里提供一些补充信息：
 
