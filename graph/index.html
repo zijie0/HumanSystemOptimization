@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human System Optimization Knowledge Graph</title>
+  <script src="../skill/references/graph-data.js"></script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f2;
+      --ink: #18221f;
+      --muted: #5f6862;
+      --line: #cfd8d1;
+      --module: #2f6f73;
+      --practice: #6d8f3f;
+      --mechanism: #6a5b9a;
+      --risk: #a6503d;
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: end;
+      padding: 24px 28px 16px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfbf7;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 720;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    input {
+      width: min(320px, 42vw);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 14px;
+      background: #fff;
+      color: var(--ink);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      min-height: calc(100vh - 98px);
+    }
+
+    #graph {
+      width: 100%;
+      height: calc(100vh - 98px);
+      display: block;
+    }
+
+    aside {
+      border-left: 1px solid var(--line);
+      background: var(--panel);
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .legend span {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    .detail {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .relations {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .relation {
+      margin: 0 0 12px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .relation strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    @media (max-width: 820px) {
+      header {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      input {
+        width: 100%;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      #graph {
+        height: 62vh;
+      }
+
+      aside {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Human System Optimization Knowledge Graph</h1>
+      <p class="subtitle">睡眠、饮食、动力、专注、大脑健康、长寿与个人实践之间的知识关系。</p>
+    </div>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="搜索节点，例如 睡眠、禁食、多巴胺">
+    </div>
+  </header>
+
+  <main>
+    <svg id="graph" role="img" aria-label="Human System Optimization knowledge graph"></svg>
+    <aside>
+      <h2 id="node-title">选择一个节点</h2>
+      <p id="node-detail" class="detail">点击图中的节点查看说明和相关关系。</p>
+      <div class="legend">
+        <span><i class="dot" style="background: var(--module)"></i>模块</span>
+        <span><i class="dot" style="background: var(--practice)"></i>实践</span>
+        <span><i class="dot" style="background: var(--mechanism)"></i>机制</span>
+        <span><i class="dot" style="background: var(--risk)"></i>风险</span>
+      </div>
+      <div class="relations">
+        <h2>关系</h2>
+        <div id="relations"></div>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const graph = window.HSO_GRAPH;
+    const svg = document.getElementById("graph");
+    const search = document.getElementById("search");
+    const title = document.getElementById("node-title");
+    const detail = document.getElementById("node-detail");
+    const relations = document.getElementById("relations");
+    const colors = {
+      module: "#2f6f73",
+      practice: "#6d8f3f",
+      mechanism: "#6a5b9a",
+      risk: "#a6503d"
+    };
+    let selectedId = "sleep";
+
+    function layout(width, height) {
+      const cx = width / 2;
+      const cy = height / 2;
+      const ring = Math.min(width, height) * 0.34;
+      const center = new Set(["sleep", "diet", "dopamine", "focus", "brain", "longevity", "practice"]);
+      const outer = graph.nodes.filter(node => !center.has(node.id));
+      const inner = graph.nodes.filter(node => center.has(node.id));
+
+      inner.forEach((node, index) => {
+        const angle = (Math.PI * 2 * index) / inner.length - Math.PI / 2;
+        node.x = cx + Math.cos(angle) * ring * 0.52;
+        node.y = cy + Math.sin(angle) * ring * 0.52;
+      });
+
+      outer.forEach((node, index) => {
+        const angle = (Math.PI * 2 * index) / outer.length - Math.PI / 2;
+        node.x = cx + Math.cos(angle) * ring;
+        node.y = cy + Math.sin(angle) * ring;
+      });
+    }
+
+    function nodeById(id) {
+      return graph.nodes.find(node => node.id === id);
+    }
+
+    function render() {
+      const width = svg.clientWidth;
+      const height = svg.clientHeight;
+      const query = search.value.trim().toLowerCase();
+      layout(width, height);
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      svg.innerHTML = "";
+
+      const edgeLayer = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      graph.edges.forEach(edge => {
+        const source = nodeById(edge.source);
+        const target = nodeById(edge.target);
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", source.x);
+        line.setAttribute("y1", source.y);
+        line.setAttribute("x2", target.x);
+        line.setAttribute("y2", target.y);
+        line.setAttribute("stroke", "#b9c5bd");
+        line.setAttribute("stroke-width", selectedId === edge.source || selectedId === edge.target ? "2.4" : "1.2");
+        line.setAttribute("opacity", selectedId === edge.source || selectedId === edge.target ? "0.95" : "0.5");
+        edgeLayer.appendChild(line);
+      });
+      svg.appendChild(edgeLayer);
+
+      graph.nodes.forEach(node => {
+        const matched = !query || node.label.toLowerCase().includes(query) || node.detail.toLowerCase().includes(query);
+        const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        group.setAttribute("cursor", "pointer");
+        group.setAttribute("opacity", matched ? "1" : "0.22");
+        group.addEventListener("click", () => {
+          selectedId = node.id;
+          updatePanel();
+          render();
+        });
+
+        const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        circle.setAttribute("cx", node.x);
+        circle.setAttribute("cy", node.y);
+        circle.setAttribute("r", selectedId === node.id ? "30" : "24");
+        circle.setAttribute("fill", colors[node.type]);
+        circle.setAttribute("stroke", selectedId === node.id ? "#18221f" : "#ffffff");
+        circle.setAttribute("stroke-width", selectedId === node.id ? "3" : "2");
+        group.appendChild(circle);
+
+        const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        label.setAttribute("x", node.x);
+        label.setAttribute("y", node.y + 42);
+        label.setAttribute("text-anchor", "middle");
+        label.setAttribute("font-size", "13");
+        label.setAttribute("font-weight", selectedId === node.id ? "700" : "560");
+        label.setAttribute("fill", "#18221f");
+        label.textContent = node.label;
+        group.appendChild(label);
+        svg.appendChild(group);
+      });
+    }
+
+    function updatePanel() {
+      const node = nodeById(selectedId);
+      title.textContent = node.label;
+      detail.textContent = node.detail;
+      const connected = graph.edges.filter(edge => edge.source === node.id || edge.target === node.id);
+      relations.innerHTML = connected.map(edge => {
+        const other = nodeById(edge.source === node.id ? edge.target : edge.source);
+        return `<p class="relation"><strong>${other.label}</strong><br>${edge.relation}</p>`;
+      }).join("") || "<p class=\"relation\">暂无关系。</p>";
+    }
+
+    search.addEventListener("input", render);
+    window.addEventListener("resize", render);
+    updatePanel();
+    render();
+  </script>
+</body>
+</html>

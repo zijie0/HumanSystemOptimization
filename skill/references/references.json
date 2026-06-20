@@ -1,0 +1,7 @@
+[
+  {"title": "Huberman Lab", "url": "https://hubermanlab.com/", "role": "primary source collection"},
+  {"title": "Controlling Your Dopamine for Motivation, Focus and Satisfaction", "url": "https://hubermanlab.com/controlling-your-dopamine-for-motivation-focus-and-satisfaction/", "role": "dopamine source"},
+  {"title": "Nutrition, longevity and disease", "url": "https://www.cell.com/cell/pdf/S0092-8674(22)00398-1.pdf", "role": "longevity diet paper"},
+  {"title": "The quest to slow ageing through drug discovery", "url": "https://www.nature.com/articles/s41573-020-0067-7", "role": "longevity drug overview"},
+  {"title": "程序员延寿指南", "url": "https://github.com/geekan/HowToLiveLonger", "role": "Chinese longevity reference"}
+]

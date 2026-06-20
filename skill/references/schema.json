@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HumanSystemOptimization Knowledge Base",
+  "type": "object",
+  "required": ["version", "source", "medical_boundary", "modules", "references", "graph"],
+  "properties": {
+    "version": {"type": "string"},
+    "source": {"type": "string"},
+    "medical_boundary": {"type": "string"},
+    "tracking_metrics": {"type": "array", "items": {"type": "string"}},
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "summary", "priority", "chapter_path", "mechanisms", "practices", "cautions", "references"],
+        "properties": {
+          "id": {"type": "string"},
+          "title": {"type": "string"},
+          "summary": {"type": "string"},
+          "priority": {"type": "integer"},
+          "chapter_path": {"type": "string"},
+          "keywords": {"type": "array", "items": {"type": "string"}},
+          "mechanisms": {"type": "array", "items": {"type": "string"}},
+          "practices": {"type": "array", "items": {"type": "string"}},
+          "cautions": {"type": "array", "items": {"type": "string"}},
+          "assets": {"type": "array", "items": {"type": "string"}},
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "url", "role"],
+              "properties": {
+                "title": {"type": "string"},
+                "url": {"type": "string"},
+                "role": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "graph": {
+      "type": "object",
+      "required": ["nodes", "edges"],
+      "properties": {
+        "nodes": {"type": "array"},
+        "edges": {"type": "array"}
+      }
+    }
+  }
+}

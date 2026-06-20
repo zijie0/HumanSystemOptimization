@@ -1,0 +1,26 @@
+[project]
+name = "humansystemoptimization"
+version = "0.1.0"
+description = "Structured knowledge base and MCP server for HumanSystemOptimization"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+hso-mcp = "humansystemoptimization.mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/humansystemoptimization"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

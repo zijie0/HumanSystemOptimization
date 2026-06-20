@@ -1,0 +1,281 @@
+{
+  "version": "2026-06-20",
+  "source": "README.md",
+  "medical_boundary": "本知识库用于健康习惯学习、复盘和生活计划辅助，不构成医疗诊断、处方或治疗建议。涉及药物、补充剂、长时间禁食、慢病、孕产、精神健康、未成年人或异常指标时，应咨询医生或合格专业人员。",
+  "tracking_metrics": [
+    "睡眠时长、睡眠质量、入睡时间和夜间光照暴露",
+    "进食窗口、糖和深加工食品摄入、发酵食品和植物性食物摄入",
+    "每周有氧分钟数、力量训练次数、运动后睡眠影响",
+    "专注时段、手机使用时长、学习后的休息和复盘",
+    "体重、腰围、血糖 HbA1c、CRP、LDL 等需要专业解读的指标"
+  ],
+  "modules": [
+    {
+      "id": "sleep",
+      "title": "睡眠与昼夜节律",
+      "summary": "睡眠是健康、免疫、代谢、心理状态、专注和学习的基础。README 将光照、体温、咖啡因、午睡和夜间行为作为调节昼夜节律的主要杠杆。",
+      "priority": 1,
+      "chapter_path": "references/modules/01_sleep.md",
+      "keywords": ["睡眠", "光照", "皮质醇", "褪黑素", "体温", "咖啡因", "Yoga Nidra"],
+      "mechanisms": [
+        "早晨光照通过黑视素神经节细胞校准内在生物钟，并影响皮质醇、肾上腺素和褪黑素倒计时。",
+        "夜间强光会让身体误判为白天，扰乱昼夜节律，并可能影响后续多巴胺、情绪、专注和代谢。",
+        "体温上升倾向于推动清醒，体温下降有利于进入睡眠；运动、冷水澡和环境温度会改变这个节律。"
+      ],
+      "practices": [
+        "起床后到户外接触阳光 2-10 分钟；阴天可适当延长，隔窗效果显著下降。",
+        "晚上减少光源，尤其避免 23:00 到次日 04:00 的强光和手机光。",
+        "傍晚观察落日，帮助身体获得夜间到来的时间信号。",
+        "中午后咖啡因是否影响睡眠需要个人测试；默认应谨慎。",
+        "可用午睡、Yoga Nidra、冥想或自我催眠作为非睡眠深度休息。"
+      ],
+      "cautions": [
+        "不建议把褪黑素作为常规入睡工具；README 提到剂量监管和情绪风险。",
+        "镁、芹黄素、牛磺酸等补充剂应结合自身情况和专业意见。",
+        "晚间高强度运动可能推迟体温下降并影响入睡。"
+      ],
+      "assets": [],
+      "references": [
+        {"title": "Huberman Lab", "url": "https://hubermanlab.com/", "role": "primary inspiration"},
+        {"title": "Yoga Nidra example", "url": "https://youtu.be/M0u9GST_j3s", "role": "practice example"},
+        {"title": "Examine.com", "url": "https://examine.com/", "role": "supplement lookup"}
+      ]
+    },
+    {
+      "id": "diet",
+      "title": "饮食、禁食与肠道健康",
+      "summary": "饮食模块强调何时进食与吃什么同等重要：间歇性禁食影响血糖、修复和代谢状态，发酵食物和植物性饮食帮助肠道菌群与炎症管理。",
+      "priority": 2,
+      "chapter_path": "references/modules/02_diet.md",
+      "keywords": ["fasting", "间歇性禁食", "进食窗口", "血糖", "肠道菌群", "发酵食品", "地中海饮食"],
+      "mechanisms": [
+        "进食状态偏向血糖较高、细胞复制与成长；禁食状态偏向修复、清理和自噬。",
+        "稳定进食窗口与睡眠周期对齐，避免类似频繁倒时差的代谢扰动。",
+        "肠道菌群多样性与消化、免疫和炎症相关；抗生素会显著破坏菌群生态。"
+      ],
+      "practices": [
+        "基础禁食：起床后至少 1 小时不吃，睡前 2-3 小时不吃。",
+        "高阶禁食：逐步尝试 8 小时进食窗口，如 10-18 点或 12-20 点。",
+        "禁食期间可喝水、茶、黑咖啡；糖会中断禁食。",
+        "晚饭后轻量散步帮助血糖清理。",
+        "每天两次摄入自然发酵食品，如无糖酸奶、kefir、康普茶、泡菜、纳豆。",
+        "日常饮食以植物类食物为主，减少深度加工食品和糖。"
+      ],
+      "cautions": [
+        "长时间禁食、胆结石风险、糖尿病、低血糖、孕产或进食障碍相关情况应先咨询医生。",
+        "益生菌和益生元效果并非总是可靠，产品监管有限。",
+        "生酮饮食长期实践可能存在风险；README 更推荐可持续的地中海饮食结构。"
+      ],
+      "assets": [],
+      "references": [
+        {"title": "Christopher Gardner diet comparison", "url": "https://youtu.be/sJLK3sVexIk", "role": "diet comparison"},
+        {"title": "中国居民膳食指南介绍", "url": "https://sspai.com/post/72984", "role": "localized dietary reference"},
+        {"title": "Bloch fasting gallbladder paper", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1419405/", "role": "risk discussion"},
+        {"title": "Sichieri overnight fasting paper", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1405175/", "role": "risk discussion"}
+      ]
+    },
+    {
+      "id": "mindset_dopamine",
+      "title": "心态、动力与多巴胺",
+      "summary": "本模块把多巴胺视为动机、欲望、快乐和坚持的核心调节系统，重点是避免过度叠加刺激，建立随机奖励和成长型思维。",
+      "priority": 3,
+      "chapter_path": "references/modules/03_mindset_dopamine.md",
+      "keywords": ["多巴胺", "动力", "成长型思维", "奖励", "冷水浴", "上瘾"],
+      "mechanisms": [
+        "多巴胺的相对变化量比绝对水平更影响主观快乐；持续高刺激会抬高快乐阈值。",
+        "多巴胺储备有限，工作、游戏、社交、运动等活动会竞争同一套奖励系统。",
+        "刺激叠加会形成更高峰值，也可能带来更长低谷，削弱单一活动本身的吸引力。"
+      ],
+      "practices": [
+        "对常规活动随机化奖励叠加因素，例如有时运动听音乐、有时不听。",
+        "把努力过程本身定义为奖励，用成长型思维降低对外部奖赏的依赖。",
+        "通过健康社交、运动、稳定睡眠等方式支持多巴胺系统。",
+        "必要时用冷水浴等行动工具，但控制频率并注意安全。"
+      ],
+      "cautions": [
+        "尼古丁、可卡因、安非他命和滥用聪明药会强烈扰动奖励系统并有成瘾风险。",
+        "L-Tyrosine、PEA、Huperzine A、Modafinil、Alpha-GPC 等不应持续随意使用。",
+        "夜间光照和褪黑素可能降低多巴胺相关状态，影响情绪和专注。"
+      ],
+      "assets": [],
+      "references": [
+        {"title": "Controlling Your Dopamine for Motivation, Focus and Satisfaction", "url": "https://hubermanlab.com/controlling-your-dopamine-for-motivation-focus-and-satisfaction/", "role": "primary topic source"}
+      ]
+    },
+    {
+      "id": "learning_focus",
+      "title": "学习、专注与神经可塑性",
+      "summary": "学习被描述为神经元重新连接，需要足够专注和犯错信号。成年人可通过小幅增量学习、前庭系统新颖刺激、休息和注意力环境设计来提升学习效率。",
+      "priority": 4,
+      "chapter_path": "references/modules/04_learning_focus.md",
+      "keywords": ["学习", "专注", "神经可塑性", "犯错", "生理叹息", "冥想", "手机使用"],
+      "mechanisms": [
+        "学习需要神经可塑性状态，犯错会释放肾上腺素、乙酰胆碱和多巴胺来促进调整。",
+        "神经元重连接主要在休息和睡眠中巩固。",
+        "Default network 与 Task networks 需要像跷跷板一样协调；多巴胺有助于专注网络协调。"
+      ],
+      "practices": [
+        "把学习拆成小幅增量，尤其适合 25 岁后神经可塑性下降的成年人。",
+        "用倒立、瑜伽、滑板等新颖平衡体验触发前庭系统，但必须注意安全。",
+        "压力过高时使用生理叹息：连续两次吸气后长呼气。",
+        "90 分钟学习后进行约 20 分钟非睡眠深度休息。",
+        "限制视野干扰、提高显示器位置，减少 context switch。",
+        "控制手机时长；README 引用青少年少于 60 分钟、成年人少于 120 分钟的研究建议。"
+      ],
+      "cautions": [
+        "心流更适合执行已掌握任务，不等同于学习新技能的最佳状态。",
+        "聪明药可能带来成瘾、代谢和长期学习效果风险。",
+        "前庭刺激、倒立和冷水等行动工具有安全风险。"
+      ],
+      "assets": [],
+      "references": [
+        {"title": "Rich Roll interview with Andrew Huberman", "url": "https://youtu.be/2ekdc6jCu2E", "role": "background source"}
+      ]
+    },
+    {
+      "id": "brain_health",
+      "title": "大脑健康与营养支持",
+      "summary": "大脑健康模块强调睡眠、有氧运动、电解质和关键营养素。README 把 Omega-3 EPA、磷脂酰丝氨酸、胆碱等列为相对重要的支持项。",
+      "priority": 5,
+      "chapter_path": "references/modules/05_brain_health.md",
+      "keywords": ["大脑健康", "有氧运动", "Omega-3", "EPA", "胆碱", "肌酸", "电解质"],
+      "mechanisms": [
+        "有氧运动提升心肺功能，支持大脑供能。",
+        "Omega-3 EPA 是神经细胞重要组成部分，并与情绪和注意力支持相关。",
+        "水、钠、钾、镁等电解质是神经元信号传递的基础。"
+      ],
+      "practices": [
+        "每周 150-180 分钟有氧训练。",
+        "通过鱼、牡蛎、奇亚籽、核桃、大豆或鱼油补充 Omega-3 EPA。",
+        "通过鸡蛋尤其蛋黄、土豆、坚果、水果或 Alpha-GPC 获取胆碱来源。",
+        "不吃肉的人可关注肌酸摄入。",
+        "用心理暗示或与喜欢的食物搭配，逐步增加对健康食物的接受度。"
+      ],
+      "cautions": [
+        "补充剂剂量和适用性需结合饮食、疾病、药物和专业意见。",
+        "Alpha-GPC、肌酸等补充剂不应替代睡眠、运动和饮食基础。",
+        "个体对食物和补剂反应不同，应记录并复盘。"
+      ],
+      "assets": [],
+      "references": [
+        {"title": "Huberman supplements page", "url": "https://www.thorne.com/u/huberman", "role": "supplement example"}
+      ]
+    },
+    {
+      "id": "longevity",
+      "title": "长寿、抗衰老与风险边界",
+      "summary": "长寿模块来自 Huberman 与 David Sinclair 相关访谈，涵盖衰老机制、fasting、饮食、运动、药物、细胞重编程和监测。README 已在 2025-06-17 更新提醒 Sinclair 及白藜芦醇、NMN 等证据争议，应谨慎采纳。",
+      "priority": 6,
+      "chapter_path": "references/modules/06_longevity.md",
+      "keywords": ["长寿", "Sinclair", "fasting", "mTOR", "sirtuin", "NMN", "白藜芦醇", "二甲双胍", "Yamanaka Factors"],
+      "mechanisms": [
+        "README 将衰老描述为 DNA 信息和表观基因组控制信息损失，其中表观基因组占较大权重。",
+        "低血糖状态可能抑制 mTOR、激活 sirtuin、提高胰岛素敏感度并触发修复。",
+        "现代长寿研究更关注触发身体自身的抗衰老机制，而不是简单外源抗氧化。"
+      ],
+      "practices": [
+        "长寿饮食倾向植物类蛋白和脂肪，减少精制碳水、糖、动物脂肪和动物蛋白。",
+        "每周约 3 小时有氧，搭配 2-3 次力量训练。",
+        "跟踪 HbA1c、CRP、LDL 等指标，并由专业人员解释。",
+        "避免吸烟、肥胖和不必要的 X 光暴露。",
+        "把药物和补充剂视为高风险候选项，不作为默认生活计划。"
+      ],
+      "cautions": [
+        "Sinclair 相关主张、白藜芦醇、NMN、NR、二甲双胍等抗衰老方案存在较大争议。",
+        "药物研究多处于人体实验早期或适应症外讨论，不能自行处方。",
+        "长期或极端禁食可能增加胆结石、低血糖或其他风险。",
+        "长寿指标和医学范围需要个性化，不能只看通用参考区间。"
+      ],
+      "assets": [
+        "imgs/diet_for_longevity.png",
+        "imgs/workout_plan.png",
+        "imgs/drugs_for_longevity.png",
+        "imgs/cell_reprogramming.png"
+      ],
+      "references": [
+        {"title": "Nutrition, longevity and disease", "url": "https://www.cell.com/cell/pdf/S0092-8674(22)00398-1.pdf", "role": "diet and longevity paper"},
+        {"title": "The quest to slow ageing through drug discovery", "url": "https://www.nature.com/articles/s41573-020-0067-7", "role": "drug discovery overview"},
+        {"title": "程序员延寿指南", "url": "https://github.com/geekan/HowToLiveLonger", "role": "external Chinese longevity guide"},
+        {"title": "Life Biosciences", "url": "https://www.lifebiosciences.com/", "role": "company example"},
+        {"title": "Altos Labs", "url": "https://altoslabs.com/", "role": "company example"}
+      ]
+    },
+    {
+      "id": "personal_practice",
+      "title": "个人实践与工具化训练",
+      "summary": "README 最后把作者实践整理成可训练习惯：早晨光照、8 小时进食窗口、EPA 鱼油、专注模式、站立办公、Yoga Nidra、每周运动和 PAI 监控。",
+      "priority": 7,
+      "chapter_path": "references/modules/07_personal_practice.md",
+      "keywords": ["个人实践", "习惯", "PAI", "AG1", "鱼油", "站立办公", "运动"],
+      "mechanisms": [
+        "把复杂健康知识转为低摩擦日常动作，更容易形成习惯训练。",
+        "通过手环、App、阅读时长和专注模式等外部工具降低执行成本。",
+        "运动、饮食、睡眠、学习互相影响，晚间运动可能改善精神但损害睡眠。"
+      ],
+      "practices": [
+        "早晨遛狗或通勤时完成自然光暴露。",
+        "尝试 8 小时进食窗口，中午偏蔬菜轻食，早上可喝盐水、茶或补剂。",
+        "优先考虑广泛认可的基础补充剂，如复合维生素和 EPA 鱼油。",
+        "用专注模式、番茄时钟、升降桌和 Yoga Nidra 支持工作学习。",
+        "用小米手环 PAI 或类似指标保持每周约 3 次跑步/羽毛球等运动。"
+      ],
+      "cautions": [
+        "作者实践不是通用处方，需根据个人健康、家庭、工作和医学条件调整。",
+        "AG1、白藜芦醇、NMN、二甲双胍等在 README 中均带有性价比或证据争议提醒。",
+        "下班后 21-22 点运动可能影响睡眠质量，需要权衡。"
+      ],
+      "assets": [],
+      "references": [
+        {"title": "My Circadian Clock App", "url": "https://mycircadianclock.org/", "role": "tracking tool"},
+        {"title": "Huberman supplement list", "url": "https://fastlifehacks.com/andrew-huberman-supplements-list/", "role": "supplement reference"},
+        {"title": "养生博主的 23 年总结", "url": "https://zhuanlan.zhihu.com/p/675470252", "role": "update article"},
+        {"title": "养生博主的 24 年总结", "url": "https://zhuanlan.zhihu.com/p/1896275046068094483", "role": "update article"}
+      ]
+    }
+  ],
+  "references": [
+    {"title": "Huberman Lab", "url": "https://hubermanlab.com/", "role": "primary source collection"},
+    {"title": "Lex Fridman daily routine article", "url": "https://zhuanlan.zhihu.com/p/371254789", "role": "background"},
+    {"title": "视频版", "url": "https://www.bilibili.com/video/BV1EW4y1R7yi/", "role": "README video summary"},
+    {"title": "养生博主的 23 年总结", "url": "https://zhuanlan.zhihu.com/p/675470252", "role": "author update"},
+    {"title": "养生博主的 24 年总结", "url": "https://zhuanlan.zhihu.com/p/1896275046068094483", "role": "author update"}
+  ],
+  "graph": {
+    "nodes": [
+      {"id": "sleep", "label": "睡眠", "type": "module", "detail": "健康、学习、代谢和情绪的基础。"},
+      {"id": "diet", "label": "饮食/禁食", "type": "module", "detail": "进食窗口、血糖状态、肠道菌群和饮食结构。"},
+      {"id": "dopamine", "label": "多巴胺", "type": "mechanism", "detail": "动机、奖励、快乐阈值和专注协调。"},
+      {"id": "focus", "label": "学习专注", "type": "module", "detail": "犯错信号、神经可塑性、休息和注意力环境。"},
+      {"id": "brain", "label": "大脑健康", "type": "module", "detail": "有氧运动、Omega-3、胆碱、电解质。"},
+      {"id": "longevity", "label": "长寿", "type": "module", "detail": "饮食、运动、监测、药物争议和细胞重编程。"},
+      {"id": "practice", "label": "个人实践", "type": "module", "detail": "把知识转成低摩擦日常习惯。"},
+      {"id": "light", "label": "晨间光照", "type": "practice", "detail": "起床后户外 2-10 分钟。"},
+      {"id": "night_light", "label": "夜间避光", "type": "practice", "detail": "尤其避免 23:00-04:00 强光。"},
+      {"id": "fasting", "label": "进食窗口", "type": "practice", "detail": "基础版睡前 2-3 小时不吃，高阶 8 小时窗口。"},
+      {"id": "fermented", "label": "发酵食品", "type": "practice", "detail": "每天两次自然发酵食品，支持菌群多样性。"},
+      {"id": "exercise", "label": "有氧+力量", "type": "practice", "detail": "每周约 150-180 分钟有氧，搭配力量训练。"},
+      {"id": "nsdr", "label": "NSDR/冥想", "type": "practice", "detail": "午休、Yoga Nidra、生理叹息和深度休息。"},
+      {"id": "caution_drugs", "label": "药物/补剂争议", "type": "risk", "detail": "NMN、白藜芦醇、二甲双胍、聪明药等需谨慎。"},
+      {"id": "medical", "label": "医学边界", "type": "risk", "detail": "药物、慢病、异常指标、极端禁食需要专业意见。"}
+    ],
+    "edges": [
+      {"source": "light", "target": "sleep", "relation": "校准昼夜节律"},
+      {"source": "night_light", "target": "sleep", "relation": "降低节律扰动"},
+      {"source": "sleep", "target": "dopamine", "relation": "夜间光照会影响后续多巴胺状态"},
+      {"source": "dopamine", "target": "focus", "relation": "支持动机和专注网络协调"},
+      {"source": "sleep", "target": "focus", "relation": "睡眠中巩固学习"},
+      {"source": "nsdr", "target": "focus", "relation": "降低压力并支持学习恢复"},
+      {"source": "fasting", "target": "diet", "relation": "控制进食时间和血糖状态"},
+      {"source": "fermented", "target": "diet", "relation": "提升肠道菌群多样性"},
+      {"source": "exercise", "target": "brain", "relation": "有氧支持大脑供能"},
+      {"source": "exercise", "target": "longevity", "relation": "心肺和肌肉能力支持延寿"},
+      {"source": "diet", "target": "longevity", "relation": "饮食结构和禁食影响衰老机制"},
+      {"source": "practice", "target": "sleep", "relation": "晨光和夜间避光可训练"},
+      {"source": "practice", "target": "diet", "relation": "进食窗口可训练"},
+      {"source": "practice", "target": "focus", "relation": "专注块和阅读可训练"},
+      {"source": "caution_drugs", "target": "longevity", "relation": "NMN/白藜芦醇/二甲双胍需谨慎"},
+      {"source": "medical", "target": "caution_drugs", "relation": "涉及药物和异常指标需专业意见"},
+      {"source": "medical", "target": "fasting", "relation": "极端禁食需专业评估"}
+    ]
+  }
+}
